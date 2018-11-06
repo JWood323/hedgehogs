@@ -3,9 +3,8 @@ POSTGRES_PASSWORD = "hedgehogs_rcos"
 DBNAME = "rcos"
 
 # Use this host to connect to the remote PostgreSQL server
-#HOST = "206.189.181.163"
-HOST = "129.161.69.99"
-
+HOST = "206.189.181.163"    # Ranjit
+#HOST = "192.168.99.100"    # Your local
 PORT = "5432"
 
 def make_conn_string():
