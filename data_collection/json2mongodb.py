@@ -43,6 +43,7 @@ def save_to_mongodb(input_file_name, collectionID, usernameID, passwordID):
         collection.insert_one(item)
     # file.close()
 
+#Opens a Json file and grabs relevant data and organizes it into a dictionary
 def get_collection_name(input_file_name):
     data_list = json.load(open(input_file_name))
     data = dict(data_list[0])
