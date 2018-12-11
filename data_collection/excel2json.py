@@ -1,5 +1,6 @@
 from import_hedgehogs import *
 
+#function that takes excel file that has the data and converts it to a comma separated file
 def convert_excel_to_csv(excel_file):
     wb = load_workbook(excel_file)
     counter = 0
