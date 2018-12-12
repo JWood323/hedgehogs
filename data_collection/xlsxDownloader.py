@@ -2,6 +2,7 @@
 
 from import_hedgehogs import *
 
+#This function creates a top level link to the sec website to grab the company data
 def createTopLevelURLs(ticker):
     top_level_links = []
     top_level_link = "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=" + ticker + "&type=10-Q&dateb=&owner=exclude&count=4"
@@ -26,6 +27,7 @@ def createParseableUrls(top_level_links):
                 return_list.append(header_link + str(xlxs['href']))
     return return_list
 
+#This function downloads a xlxs file and grabs the data
 def downloadXlxs(xlxs_links, ticker):
     print("Downloading .xlxs files...")
     os.chdir('fin_data')

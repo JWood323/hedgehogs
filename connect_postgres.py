@@ -1,5 +1,6 @@
 import psycopg2
 
+#function that allows you to connect to our prosgres server
 def connection():
     print('[LOG] Trying to connect')
     try:
